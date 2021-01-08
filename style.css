@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  touch-action: manipulation;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7159c1;
+}
+
+.github a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.65rem;
+}
+
+.github .code {
+  color: #7159c1;
+}
+
+.github:hover .code {
+  color: white;
+}
+.github img {
+  display: block;
+  border-radius: 50%;
+  width: 45px;
+  border: 2px solid gray;
+  margin-right: 5px;
+}
+
+.navbar-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.navbar-list a {
+  display: block;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.navbar-list li:hover {
+  background-color: #384049;
+}
+/* Welcome Section Start */
+
+.presentation-image {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 7px solid white;
+  transition: all 300ms ease-in-out;
+}
+
+.presentation-image:hover {
+  border-radius: 0%;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(37, 36, 36);
+}
+
+.welcome-section h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.welcome-section p {
+  color: rgba(218, 6, 24, 0.733);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Welcome Section End */
+
+/* Projects Section Start */
+
+.projects-section {
+  margin: 0 auto;
+  background-color: #3b2c68;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.projects-section h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.project {
+  border-radius: 2px;
+  box-shadow: 1px 2px solid black;
+  background-color: #384049;
+}
+
+.code {
+  color: #384049;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #7159c1;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 4rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+/* Projects Section End */
+
+/* Skills Section Start*/
+
+.skills-section {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, minmax(auto, 30em)) 2fr;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 25rem;
+  padding-top: 4rem;
+  text-align: center;
+  width: 100%;
+  background-color: #384049;
+  color: white;
+  height: 100vh;
+}
+
+.content-wrap {
+  padding: 0 10rem;
+}
+.content-wrap h2 {
+  padding: 1rem;
+}
+.flex-container,
+.skills-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  flex-basis: 20%;
+  background-color: #7159c1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 40px;
+}
+
+.skill-card img {
+  display: inline-block;
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+}
+
+.skill-card h2 {
+  font-weight: 700;
+}
+
+/* Skills Section End*/
+
+/* Contacts Section Start*/
+
+.contacts-section {
+  background-color: rgb(37, 36, 36);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts-section h2 {
+  color: white;
+  font-size: 54px;
+  font-weight: 700;
+  margin: 10px 10px;
+}
+
+.contacts-section p {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 10px 10px;
+}
+
+.contact-list {
+  display: flex;
+  color: white;
+}
+
+.contact-list img {
+  height: 40px;
+  width: auto;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  padding: 45px;
+  font-size: 30px;
+  transition: transform 250ms ease-in-out;
+}
+
+.contact-list li:hover {
+  transform: translateY(10%);
+}
+
+/* Contacts Section End*/
