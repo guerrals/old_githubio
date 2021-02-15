@@ -120,6 +120,8 @@ img {
   font-size: 20px;
   margin: 0px 100px 0px 100px;
   font-weight: 700;
+  text-align: justify;
+  color: white;
 }
 
 /* Welcome Section End */
@@ -134,6 +136,10 @@ img {
   align-items: center;
   min-height: 100vh;
   width: 100%;
+}
+
+.experience-item {
+  text-align: justify;
 }
 
 .experience-card {
